@@ -20,6 +20,13 @@ RUN sed -i -e "s/post_max_size = 8M/post_max_size = 256M/g" /etc/opt/remi/php72/
 RUN sed -i -e "s/upload_max_filesize = 2M/upload_max_filesize = 256M/g" /etc/opt/remi/php72/php.ini
 
 # Install xdebug.
+# Install composer
+RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+RUN php -r "if (hash_file('sha384', 'composer-setup.php') === 'baf1608c33254d00611ac1705c1d9958c817a1a33bce370c0595974b342601bd80b92a3f46067da89e3b06bff421f182') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+RUN chmod +x composer-setup.php
+RUN php composer-setup.php
+#RUN php -r "unlink('composer-setup.php');"
+RUN mv composer.phar /usr/local/bin/composer
 # zend_extension is configured in /etc/opt/remi/php72/php.d/15-xdebug.ini
 RUN yum -y install php72-php-pecl-xdebug \
  && echo $'[xdebug]\n\
