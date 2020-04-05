@@ -1,7 +1,6 @@
-echo "# bookreader" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/PhucDoVan/bookreader.git
-git push -u origin master
-                
+# Book Reader System
+
+## Control development environment:
+- Start: run `sudo ./up.sh`
+- Down: run `sudo ./down.sh`
+- Init Database (clear old data): run `sudo ./init-db.sh`

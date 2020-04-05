@@ -1,0 +1,132 @@
+nav ul li{
+    padding-right: 30px;
+}
+/* Footer Area CSS */
+.footer-area {
+    margin-top: 150px;
+    background-color: #212529;
+    padding: 70px 0;
+    position: relative;
+    z-index: 1; 
+}
+.footer-area .footer-single-widget .copywrite-text p {
+    margin-top: 30px;
+    margin-bottom: 0px; 
+    color: #8d8d8d;
+}
+
+.footer-area .footer-single-widget .copywrite-text p a{
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.footer-area .footer-single-widget .copywrite-text p a:hover {
+    color: #938fef;
+}
+.footer-area .footer-single-widget .footer-menu {
+    flex-wrap: wrap; 
+}
+.footer-area .footer-single-widget p{
+    color: #8d8d8d;
+    list-style: none;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    min-width: 33.3333%; 
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-area .footer-single-widget .footer-menu {
+        margin: 50px 0; 
+    } 
+}
+
+.footer-area .footer-single-widget h5 {
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #ffffff; 
+}
+.footer-area .footer-single-widget form {
+    position: relative;
+    z-index: 1; 
+}
+.footer-area .footer-single-widget form input[type="email"] {
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    border-color: #959595;
+    color: #959595;
+    font-size: 14px;
+    padding: 0 5px;
+    font-family: "Ubuntu", sans-serif;
+}
+.footer-area .footer-single-widget form button {
+    position: absolute;
+    height: 35px;
+    top: 0;
+    right: 5px;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    text-align: right;
+}
+.footer-area .footer-single-widget form button i {
+    font-size: 14px;
+    color: #959595; 
+}
+
+/* LoginForm */
+.login-container{
+    background-image: url("../images/bg-login.jpg");
+    background-repeat: no-repeat;
+    height: 970px;
+}
+.wrapper{
+    margin: 200px;
+}
+
+.form-login{
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px 60px 60px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-login .form-login-title, .form-login .checkbox{
+    margin-bottom: 30px;
+}
+
+.form-login input[type="text"], .form-login input[type="password"]{
+    margin-bottom: 25px;
+}
+/* End LoginForm*/
+
+/*Add book*/
+
+.error-notice{
+    color: red;
+}
+
+/*Register*/
+#register-title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.request-input{
+    color:red;
+}
+.notice-error{
+    color:red;
+}
+
+.back{
+    margin-left: 30px;
+}

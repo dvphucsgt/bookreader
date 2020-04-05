@@ -1,0 +1,4 @@
+.idea
+docker/db/data
+server/vendor
+/nbproject/
